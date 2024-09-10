@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <a href="style.css"></a>
+  <title>Mini Cauculadora</title>
+</head>
+
+    <style>
+    #nome
+      {
+        color: blue;
+      }
+
+    #resultado
+    {
+        border: 2px solid black;
+        width: 100px;
+        height: 50px;
+        background-color: blue;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+    }
+    </style>
+
+</head>
+  
+  <body>
+    
+    <div class="text" style="text-align:center">
+  
+      <h1>Bem vindo(a) <span id='nome'></span>, espero que esteja bem!</h1>
+      
+    </div>
+
+    <input style="text-align:center" id="num1" type="text"><br><br>
+    
+    <select id="opcao">
+      
+        <option value="+">SOMAR</option>
+        <option value="-">DIMINUIR</option>
+        <option value="/">DIVIDIR</option>
+        <option value="*">MULTIPLICAR</option>
+    
+    </select><br><br>
+
+    <input style="text-align:center;" id="num2" type="text"><br><br>
+
+    <div onclick="conta()">Clique para <b>CALCULAR</b></div><br>
+    <div id="resultado"></div>
+
+    <script>
+        var sms;
+        var op = prompt('Por favor, digite seu nome');
+        document.getElementById('nome').innerHTML = op;
+
+        function conta()
+        {
+            var funcao = document.getElementById ('opcao').value;
+            var num1 = parseInt (document.getElementById('num1').value);
+            var num2 = parseInt (document.getElementById('num2').value);
+
+            if(funcao == '+')
+            {
+                op = num1 + num2;
+            }
+
+            if (funcao == '-')
+            {
+                op = num1 - num2;
+            }
+
+            if (funcao == '/')
+            {
+                op = num1 / num2;
+            }
+
+            if (funcao == '*')
+            {
+                op = num1 * num2;
+            }
+
+            document.getElementById('resultado').innerHTML = op;
+        }
+
+
+    </script>
+
+  </body>
+  
+</html>
