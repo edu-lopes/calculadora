@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0,0,255);
+  background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(0,15,144,1) 100%);
+  overflow: hidden;
+  font-family: "JetBrains Mono", sans-serif;
+}
+.text {
+  width: 90%;
+}
+
+#nome {
+  color: #0000ff;
+}
+
+#resultado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: 90%;
+  min-width: 10%;
+  padding: 0 15px;
+  height: 50px;
+  color: #000;
+  outline: 3px solid #000;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#all {
+  background-color: #fff;
+  outline: 3px solid #000;
+  outline-offset: -5px;
+  border-radius: 10px;
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+input {
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 24px;
+  border-radius: 10px;
+  border: 3px solid #000;
+}
+
+select {
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3px solid #000;
+}
+
+b {
+  font-family: "JetBrains Mono", sans-serif;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+b:hover {
+    color: #0000ff;
+    cursor: pointer;
+}
